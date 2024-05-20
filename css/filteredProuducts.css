@@ -1,0 +1,329 @@
+.frz,
+.asp,
+#all-asp-frz {
+  display: none;
+}
+
+.container2 {
+  position: relative;
+  margin: 0 auto;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: row;
+  /* overflow: hidden; */
+  transition: all 1s ease;
+  padding: 2em 0;
+}
+
+
+
+
+
+.filter-products {
+  flex: 1;
+  display: flex;
+  /* overflow: hidden; */
+  width: 100%;
+}
+
+#filters {
+  margin: 1%;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex: 1;
+  /* padding-top: 4.5em; */
+  flex-direction: column;
+}
+
+#filters li {
+  float: left;
+}
+
+#filters li span {
+  display: block;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #666;
+  cursor: pointer;
+}
+
+#filters li span:hover {
+  color: #017d3f;
+}
+
+#filters li span.active { 
+  background: #ededed;
+  color: #333;
+}
+
+#portfoliolist .portfolio {
+  /* width: 23%; */
+  margin: 1%;
+  display: none;
+  flex-shrink: 0;
+  float: left;
+  /* overflow: hidden; */
+
+}
+
+
+.container1 .card1:hover {
+    top: 5%;
+    transition: 0.8s;
+}
+
+  .portfolio {
+    width: 100%; /* Display one product card per row */
+  }
+
+  #filter-categories {
+    max-width: 100%; /* Take full width on mobile */
+    margin-right: 0;
+    margin-bottom: 20px; /* Add space between filters and products */
+  }
+
+.container2:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+#categories{
+  list-style:none;
+}
+
+#filter-categories{
+      position: sticky;
+    height: 70%;
+    top: 70px;
+    z-index: 1;
+    flex: 1;
+    padding-top: 4.5em;
+    padding-bottom: 4.5em;
+    display: flex;
+    flex-direction: column;
+  /* overflow: hidden; */
+}
+
+/* .clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: "\0020";
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+} */
+
+.row:after,
+.clearfix:after {
+  clear: both;
+}
+
+/* .row,
+.clearfix {
+  zoom: 1;
+} */
+
+/* .clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+} */
+
+#portfoliolist {
+  flex: 8;
+  overflow-y: auto; /* Enable vertical scrolling */
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 6rem 1rem;
+  padding-top: 4.5em;
+  padding-bottom: 2.2em;
+  justify-content: center;
+  scroll-behavior: smooth;
+
+}
+
+
+
+#filter-categories {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #ebebeb;
+}
+
+#filter-categories h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#filter-headers h4{
+  color:#017d3f;
+}
+
+#categories,
+#filters {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#categories h5,
+#filters h5 {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color:#017d3f;
+}
+
+#categories li,
+#filters li {
+  margin-bottom: 10px;
+}
+
+#categories .page-item .page-link-p,
+#filters .filter {
+  cursor: pointer;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+
+/* For the first ul (with #017d3f background) */
+#categories .page-item {
+  background-color: white; /* white */
+  border:1px solid white;
+}
+
+#categories .page-item:hover {
+  background-color: #fff; /* White */
+  border: 1px solid #017d3f; /* #017d3f */
+  color: #017d3f; /* #017d3f */
+}
+
+#categories .page-item.active {
+  background-color: #017d3f; /* White */
+  border: 1px solid #017d3f; /* #017d3f */
+}
+
+#categories .page-item.active .page-link-p{
+  color: white;
+}
+#categories .page-item .page-link-p{
+  color: black;
+}
+
+/* For the second ul (with white background) */
+#filters .filter {
+  background-color: #fff; /* White */
+  border: 1px solid #fff; /* White */
+}
+
+#filters .filter:hover {
+  background-color: white; /* #017d3f */
+  border: 1px solid #017d3f; /* #017d3f */
+  color: #017d3f; /* White */
+}
+
+#filters .filter.active {
+  background-color: #017d3f; /* #017d3f */
+  border: 1px solid #017d3f; /* #017d3f */
+  color: white;
+}
+
+#filter-headers #toggleFilter{
+  display:none;
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  #portfoliolist {
+    grid-template-columns: repeat(2, 340px);
+  }
+}
+
+/*  #Mobile (Portrait) - Note: Design for a width of 320px */
+
+@media screen and (max-width: 1276px) {
+  #filter-headers #toggleFilter{
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    border-radius: 3rem;
+    background-color: #017d3f;
+    color: white;
+  }
+  .container1 {
+    flex-direction: column;
+  }
+
+  .container2 {
+    flex-direction: column;
+  }
+
+  .rotate-text {
+  transform: rotate(90deg); /* Rotate the text 90 degrees */
+  transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+  #categories li,
+#filters li {
+  margin-bottom: 0;
+  margin-top:0;
+}
+
+
+#filter-categories{
+  gap:10px;
+}
+
+#filter-headers{
+     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#filter-headers h4{
+  margin-bottom: 0;
+}
+
+
+ #categories h5,
+#filters h5{
+  margin-bottom: 0;
+  margin-top:0;
+}
+
+  #categories ,
+#filters  {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+  
+
+#portfoliolist {
+        display: flex;
+        flex-wrap: wrap;
+}
+
+}
+
+
