@@ -14705,8 +14705,7 @@ p{
   /* Hide the .new-item on small screens */
   @media (max-width: 768px) {
     .new-item {
-      padding-top: 0.5px;
-      left: 35px;
+      display: none;
     }
   }
 
