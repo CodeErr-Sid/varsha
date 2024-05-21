@@ -14578,7 +14578,11 @@ button.swiper-pagination-bullet {
     top: 5%;
     height: 500px;
     /* transition: 1.5s ease; */
+<<<<<<< HEAD
     /* z-index: 10; */
+=======
+/*     z-index: 10; */
+>>>>>>> 3ce3378122cfea43ff2c7805f1dc3e0221ddc614
 }
 
 .container1 .card1 .imgbx1{
