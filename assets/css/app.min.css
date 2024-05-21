@@ -14578,7 +14578,7 @@ button.swiper-pagination-bullet {
     top: 5%;
     height: 500px;
     /* transition: 1.5s ease; */
-    z-index: 10;
+    /* z-index: 10; */
 }
 
 .container1 .card1 .imgbx1{
@@ -14665,3 +14665,44 @@ p{
 .custom-btn{
     color: green;
 }
+.new-item {
+    position: relative;
+    left: 35px;
+    top: -28px;
+    right: -5px;
+    background-color: #fbae19;
+    color: #157347;
+    padding: 2px 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    border-radius: 5px;
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: infinite ease-in-out, unfurl 2s infinite ease-in-out;
+  }
+
+  @keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  @keyframes unfurl {
+    0% {
+      transform: scaleX(0);
+    }
+    100% {
+      transform: scaleX(1);
+      opacity: 1;
+    }
+  }
+
+  /* Hide the .new-item on small screens */
+  @media (max-width: 768px) {
+    .new-item {
+      padding-top: 0.5px;
+      left: 35px;
+    }
+  }
+
