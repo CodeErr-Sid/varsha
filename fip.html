@@ -266,7 +266,7 @@
         </div>
     </div>
 
-<!-- 936px break media query css -->
+    <!-- 936px break media query css -->
 
     <script>
         $(".slider").slick({
@@ -298,30 +298,12 @@
                 <div class="imgContainer-about-us">
                     <img class="blueDots-about-us"
                         src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/aw3.svg" />
-                    <div id="about" class="about-content-area single-thumb overflow-hidden inc-shape default-padding">
-                        <!-- Illustration -->
-                        <div class="illustration">
-                            <img src="assets/img/shape/4.png" alt="Illustration">
-                        </div>
-                    </div>
-
                     <!-- <img class="mainImg-about-us" src="img/company-overview-bg-1.jpg" /> -->
-                    <div class="carousel-frame" id="about-frame">
+                    <div class="carousel-frame" style="height: 80vh;border-radius: 0;box-shadow: none;"
+                        id="about-frame">
                         <div class="carousel-slide">
-                            <img src="assets/img/carousel/1.jpg" />
-                            <!-- <img src="assets/img/carousel/2.jpg" /> -->
-                            <img src="assets/img/carousel/3.jpg" />
-                            <img src="assets/img/carousel/4.jpg" />
-                            <!-- <img src="assets/img/carousel/5.jpg" /> -->
-                            <!-- <img src="assets/img/carousel/6.jpg" /> -->
+                            <img src="assets/img/carousel/1.jpg" style="border-radius: 0;" />
                         </div>
-                        <i class="carousel-prev fas fa-chevron-left"></i>
-                        <i class="carousel-next fas fa-chevron-right"></i>
-                        <ol class="carousel-dots">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ol>
                     </div>
                     <!-- <h2 id="carousel-txt1" style="color: #12733b;"> Gallery</h2> -->
                 </div>
@@ -395,6 +377,7 @@
         }
 
         .our-vision-inner h1 {
+            text-align: center;
             color: white;
         }
 
@@ -465,8 +448,8 @@
 
         .our-value-inner {
             position: relative;
-            width: 50%;
-            margin: 0 auto;
+            /* width: 50%;
+            margin: 0 auto; */
             background-color: white;
         }
 
@@ -476,11 +459,11 @@
         }
 
         .our-value-content p {
-            width: 100%;
+            width: 80%;
         }
 
         .our-value-content {
-            padding: 3rem 6rem;
+            padding: 3rem 1rem 3rem 34rem;
         }
 
         .our-value-content figure img {
@@ -489,7 +472,7 @@
 
         .our-value-content figure {
             position: absolute;
-            left: -201px;
+            left: 4%;
             top: 50%;
             transform: translateY(-50%);
         }
@@ -499,7 +482,10 @@
             <div class="our-value-content">
                 <figure><img src="img/ico/our-values.png" alt="100-organic"></figure>
                 <h1>OUR MISSION</h1>
-                <p>Adherence to strict quality measure is first nature to our team, due to our efforts over the years to exceed food standards. We are therefore experienced and prepared for accreditations and certifications as BRC-A Grade, FDA, SEDEX, SGF. We are in collaboration with our farmer stakeholders to develop GAP, Rainforest Alliances Agriculture, Organic farming
+                <p>Adherence to strict quality measure is first nature to our team, due to our efforts over the years to
+                    exceed food standards. We are therefore experienced and prepared for accreditations and
+                    certifications as BRC-A Grade, FDA, SEDEX, SGF. We are in collaboration with our farmer stakeholders
+                    to develop GAP, Rainforest Alliances Agriculture, Organic farming
                 </p>
             </div>
         </div>
@@ -517,8 +503,8 @@
 
         .our-mission-inner {
             position: relative;
-            width: 80%;
-            margin: 0 auto;
+            /* width: 80%;
+            margin: 0 auto; */
             background-color: #017d3f;
         }
 
@@ -541,7 +527,7 @@
 
         .our-mission-content figure {
             position: absolute;
-            right: -116px;
+            right: 4%;
             top: 50%;
             transform: translateY(-50%);
         }
@@ -561,6 +547,49 @@
         </div>
     </seciton>
     <!-- our mission -->
+
+    <style>
+        @media screen and (width<=986px) {
+            .vision-icons-seciton {
+                flex-wrap: wrap;
+            }
+
+            .our-mission-content p {
+                color: white;
+                text-align: center;
+                width: 90%;
+                margin: auto;
+            }
+
+            .our-mission-content h1 {
+                text-align: center;
+            }
+
+            .our-mission-content figure {
+                display: none;
+            }
+
+            .our-value-content h1,
+            .our-value-content p {
+                text-align: center;
+
+            }
+
+            .our-value-content figure {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                z-index: -1;
+            }
+
+            .our-value-content,
+            .our-mission-content {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+    </style>
 
 
 
