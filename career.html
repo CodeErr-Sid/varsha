@@ -99,6 +99,20 @@
 <!-- 	CHATBOT -->
 
 <body class="page page-landing">
+  <!-- pre-loader start -->
+  <div id="pre-loader">
+  </div>
+
+  <script>
+    var loader = document.getElementById("pre-loader");
+
+    window.addEventListener("load", function () {
+      setTimeout(function () {
+        loader.style.display = "none";
+      }, 1500);
+    });
+  </script>
+  <!-- pre-loader end -->
   <!-- start top bar -->
   <div id="top-bar" class="top-bar--style-3">
     <div class="container">
@@ -174,7 +188,7 @@
     }
   </style>
 
-  
+
 
   <!-- Start Breadcrumb 
     ============================================= -->
@@ -240,7 +254,7 @@
               <label class="did-floating-label" for="website">Post Applied for</label>
             </div>
             <div class="did-floating-label-content">
-              <input class="did-floating-input" type="file"  id="resume" name="resume" placeholder=" ">
+              <input class="did-floating-input" type="file" id="resume" name="resume" placeholder=" ">
               <label class="did-floating-label" for="resume">Upload Resume</label>
             </div>
 
