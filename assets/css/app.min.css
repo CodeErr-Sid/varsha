@@ -14663,14 +14663,19 @@ button.swiper-pagination-bullet {
 .custom-btn{
     color: green;
 }
-.new-item {
+
+#fip-link{
     position: relative;
-    left: 35px;
-    top: -28px;
-    right: -5px;
+}
+
+#fip-link::after {
+    content: "New";
+    position: absolute;
+    top: -15px;
+    left: 21px;
     background-color: maroon;
     color: #fff;
-    padding: 2px 5px;
+    padding: 8px 5px;
     font-size: 1rem;
     font-weight: bold;
     letter-spacing: 1.5px;
@@ -14697,9 +14702,9 @@ button.swiper-pagination-bullet {
   }
 
   /* Hide the .new-item on small screens */
-  @media (max-width: 768px) {
-    .new-item {
+  /* @media (max-width: 768px) {
+    #fip-link::after {
       display: none;
     }
-  }
+  } */
 
