@@ -13049,7 +13049,7 @@ span.select2-selection.select2-selection--single:focus {
     position: relative;
     width: 100%;
     right: 3.6%;
-    height: 55vh;
+    height: 90%;
     border-radius: 30px;
     /* height: min(calc(90vh - 10px), 350px); */
     margin: 10px auto;
