@@ -3459,6 +3459,7 @@ img {
     color: white;
     background-color: #017d3f;
     border-radius: 30px;
+    transition: all 0.4s ease-in-out;
 }
 
 
@@ -16245,7 +16246,7 @@ footer.demo .copyright {
     padding: 0%;
     margin: 0%;
     font-family: "Lato", sans-serif;
-    height: 40vh;
+    min-height: 40vh;
     background-color:darkgreen;
     display: grid;
     place-items: center;
@@ -16261,20 +16262,19 @@ h3{
 
 .certxt{
     font-size: 3em;
-    color: white;
-
+    color: #017d3f;
 }
 .certext1{
     font-size: 1.5em;
-    color: white;
+    color: #017d3f;
     font-weight: 300;
 }
 .cert-slider{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70%;
-    width: 80%;
+    height: auto;
+    width: auto;
     overflow: hidden;
     background: rgb(255,255,255);
     border-radius: 16px;

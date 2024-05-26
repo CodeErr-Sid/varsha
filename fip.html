@@ -199,12 +199,17 @@
             width: 100%;
         }
 
+        .item {
+            position: relative;
+        }
+
         .slick-slide img {
             object-fit: cover;
             width: 100%;
             max-width: 100%;
             /* padding: 5px; */
             height: 100vh;
+            filter: brightness(.5);
         }
 
         .slick-dots {
@@ -232,6 +237,7 @@
             line-height: 0;
             display: block;
             width: 20px;
+            display: none;
             height: 20px;
             padding: 5px;
             cursor: pointer;
@@ -254,15 +260,43 @@
         .slick-active button {
             background: #017d3f;
         }
+
+        .item h2 {
+            position: absolute;
+            top: 50%;
+            font-family: "Lato", sans-serif;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 3.5rem;
+            width: 50%;
+            -webkit-transition: all 300ms ease;
+            transition: all 300ms ease;
+            text-transform: uppercase;
+        }
+
+        .item h2 span {
+            display: block;
+            text-align: center;
+        }
+
+        .item h2 span:nth-child(odd) {
+            font-size: clamp(2.1rem, 2.5vw, 4.2rem);
+        }
+
+        .item h2 span:nth-child(even) {
+            font-size: clamp(1.5rem, 2.5vw, 3rem);
+        }
     </style>
 
     <!-- end top bar -->
     <div class="slider">
         <div class="item">
-            <img loading="lazy"
-                src="https://images.pexels.com/photos/618833/pexels-photo-618833.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="" />
+            <img loading="lazy" src="assets/img/fip/fip-hero-img.jpg" alt="fip-hero-img" />
+            <h2><span>Welcome to Srivarsha</span><span>Food Integration Park</span></h2>
         </div>
+
     </div>
 
     <!-- 936px break media query css -->
@@ -406,7 +440,7 @@
             <div class="vision-icons-seciton">
                 <div class="vision-icon">
                     <i class="fa fa-heartbeat" aria-hidden="true"></i>
-                    <h5 class="vision-icon-head">Protein Rich</h5>
+                    <h5 class="vision-icon-head">Nutrient Dense</h5>
                     <p>High Nutritional Value</p>
                 </div>
                 <div class="vision-icon">
@@ -572,11 +606,13 @@
                                 <i class="fa-solid fa-snowflake"></i>
                             </span>
                             <h3 class="title">Rapid Freeze Technology</h3>
-                            <p class="description">Leveraging innovative true fluidization technology, <span
-                                    class="fw-bold custom-green">JBT FLoFREEZE® True Fluidization IQF – FFA20e</span>
-                                the offers rapid freezing, guaranteeing quality preservation and freshness. Its advanced
-                                design ensures efficient and uniform freezing, making it an indispensable asset in food
-                                processing operations.</p>
+                            <p class="description">
+                                Leveraging innovative true fluidization technology, <span
+                                    class="fw-bold custom-green">JBT FLoFREEZE® True Fluidization IQF –
+                                    FFA20e</span>guaranteeing quality preservation and freshness. Its advanced design
+                                ensures efficient and uniform freezing, making it an indispensable asset in food
+                                processing operations.
+                            </p>
                         </div>
                         <span class="circle-before"></span>
                     </div>
