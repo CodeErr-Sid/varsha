@@ -245,6 +245,7 @@ html{
   width: 400px;
   object-fit: cover;
   top: auto;
+  z-index: -1;
 }
 
 @media (max-width: 1024px) {

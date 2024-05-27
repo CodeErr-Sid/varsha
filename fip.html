@@ -262,6 +262,7 @@
         }
 
         .item h2 {
+            width: 100%;
             position: absolute;
             top: 50%;
             font-family: "Lato", sans-serif;
@@ -270,7 +271,6 @@
             transform: translate(-50%, -50%);
             color: white;
             font-size: 3.5rem;
-            width: 50%;
             -webkit-transition: all 300ms ease;
             transition: all 300ms ease;
             text-transform: uppercase;
@@ -282,7 +282,7 @@
         }
 
         .item h2 span:nth-child(odd) {
-            font-size: clamp(2.1rem, 2.5vw, 4.2rem);
+            font-size: clamp(2rem, 6vw, 10rem);
         }
 
         .item h2 span:nth-child(even) {
@@ -332,8 +332,7 @@
                     <img loading="lazy" class="blueDots-about-us"
                         src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/aw3.svg" />
                     <!-- <img loading="lazy" class="mainImg-about-us" src="img/company-overview-bg-1.jpg" /> -->
-                    <div class="carousel-frame" style="height: 80vh;border-radius: 0;box-shadow: none;"
-                        id="about-frame">
+                    <div class="carousel-frame" style="border-radius: 0;box-shadow: none;" id="about-frame">
                         <div class="carousel-slide">
                             <img loading="lazy" src="assets/img/carousel/6.jpg" style="border-radius: 0;" />
                         </div>
@@ -341,7 +340,7 @@
                     <!-- <h2 id="carousel-txt1" style="color: #12733b;"> Gallery</h2> -->
                 </div>
                 <div class="responsive-container-block-about-us textSide-about-us">
-                    <p class="text-blk-about-us heading-about-us" id="carousel-txt1">Company Overview</p>
+                    <p class="text-blk-about-us heading-about-us" id="carousel-txt1">What is Food Park ?</p>
                     <p class="text-blk-about-us subHeading-about-us">
                         Sri Varsha Group, as part of the other projects in the Food Division, are the SPV of Sri Varsha
                         Integrated Food Park Project partnering with the AP Food Processing Society.
@@ -380,6 +379,18 @@
             </div>
         </div>
     </section>
+    <style>
+        #about-frame {
+            height: clamp(70vh, 2.5vh, 100vh);
+        }
+
+        @media screen and (0 < width < 1024px) {
+            #about-frame {
+                height: 90%;
+            }
+
+        }
+    </style>
     <!-- about -->
 
     <!-- our vision -->
