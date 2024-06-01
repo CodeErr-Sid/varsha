@@ -29,8 +29,8 @@
 
 .image-container-ss img {
   width: 100%;
-  aspect-ratio: 1/1;
-  height: 100%;
+  aspect-ratio: 2/1;
+  height: 100% !important;
   display: block;
   object-fit: cover;
 }
@@ -69,7 +69,7 @@ form>div {
   width: 100%;
 }
 
-.career-btn{
+.career-btn {
   border: 3px solid #017d3f;
   font-weight: 900;
   border-radius: 1rem;
@@ -80,7 +80,7 @@ form>div {
 
 .career-btn:hover,
 .career-btn:focus,
-.career-btn :active .strch-btn{
+.career-btn :active .strch-btn {
 
   color: #017d3f;
   background-color: #fff;
@@ -140,10 +140,11 @@ form>div {
 
 
 
-.did-floating-input#message{
+.did-floating-input#message {
   height: 156px;
 }
-.did-floating-input#resume{
+
+.did-floating-input#resume {
   padding: 16px 20px;
 }
 

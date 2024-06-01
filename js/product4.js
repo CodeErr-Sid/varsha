@@ -3,20 +3,11 @@ function toggleFilterCategories() {
   $('#categories, #filters').slideToggle(400); // Adjust the duration (in milliseconds) as needed
 }
 
-// Initial state when screen size is 1276px
-if ($(window).width() <= 1276) {
-  $('#categories, #filters').hide();
-}
 
 // Toggle filter categories on button click
 function toggleFilterCategories() {
   $('#categories, #filters').slideToggle(400); // Adjust the duration (in milliseconds) as needed
   $('#toggleFilter').toggleClass('rotate-text');
-}
-
-// Initial state when screen size is 1276px
-if ($(window).width() <= 1276) {
-  $('#categories, #filters').hide();
 }
 
 // Toggle filter categories and rotate text on button click
